@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.fullStack.msvc.gestionUsuario</groupId>
-	<artifactId>msvc</artifactId>
+	<artifactId>msvc-gestionUsuario</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>msvc</name>
 	<description>Demo project for Spring Boot</description>
