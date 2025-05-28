@@ -7,7 +7,7 @@ import services.EstadisticasService;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/estadisticas")
+@RequestMapping("/api/v1/estadisticas")
 public class gestorDatos {
 
     @Autowired

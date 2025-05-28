@@ -13,7 +13,7 @@
 	<groupId>com.grupofullstack.msvc_empleados</groupId>
 	<artifactId>msvc_empleados</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>msvc_empleaddos</name>
+	<name>msvc_empleados</name>
 	<packaging>pom</packaging>
 	<description>Demo project for Spring Boot</description>
 
@@ -85,29 +85,30 @@
 
 	<build>
 		<plugins>
-
-			<!-- Plugin para compilar Java -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-					<encoding>UTF-8</encoding>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</path>
+					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
-
-			<!-- Plugin para Spring Boot -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring.boot.version}</version>
 				<configuration>
-					<mainClass>com.ignacio.msvc_empleados.MsvcEmpleadosApplication</mainClass>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 

@@ -1,5 +1,6 @@
-package com.grupoFullStack.msvc.gestionTienda.models;
+package com.grupoFullStack.msvc.gestionTienda.models.entities;
 
+import com.grupoFullStack.msvc.gestionTienda.models.Producto;
 import lombok.*;
 
 import java.time.LocalDateTime;

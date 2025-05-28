@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/envios")
+@RequestMapping("/api/v1/envios")
 public class gestionEnvios {
 
     @Autowired
@@ -20,7 +20,7 @@ public class gestionEnvios {
     @PostMapping
     public Envios crear(@RequestBody Envios envio) { return service.crearEnvio(envio); }
 
-    @GetMapping("/{id}")
+    @GetMapping("/envios/{id}")
     public Envios obtener(@PathVariable Long id) { return service.obtenerEnvio(id); }
 
     @PutMapping("/{id}/estado")

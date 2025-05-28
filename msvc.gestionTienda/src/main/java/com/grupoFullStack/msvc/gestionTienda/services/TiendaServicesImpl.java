@@ -2,7 +2,7 @@ package com.grupoFullStack.msvc.gestionTienda.services;
 
 import com.grupoFullStack.msvc.gestionTienda.Exceptions.ProductoException;
 import com.grupoFullStack.msvc.gestionTienda.models.Producto;
-import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
+import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
 import com.grupoFullStack.msvc.gestionTienda.repository.TiendaRepository;
 import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +33,9 @@ public class TiendaServicesImpl {
             throw  new ProductoException(ex.getMessage());
         }
 
+    }
+    @Autowired
+    public Producto deleteById(Long id){
+        return this.deleteById(id);
     }
 }

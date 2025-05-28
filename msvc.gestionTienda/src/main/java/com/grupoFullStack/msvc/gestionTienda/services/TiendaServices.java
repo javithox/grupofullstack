@@ -9,4 +9,5 @@ public interface TiendaServices {
     List<Producto> findAll();
     Producto findById(Long id);
     Producto save(Producto producto);
+    Producto deleteById(Long id);
 }
