@@ -12,30 +12,35 @@ import java.util.List;
 
 @Service
 public class TiendaServicesImpl {
+
     @Autowired
     private TiendaRepository tiendaRepository;
 
-    @Autowired
-    public List<Tienda> findAll(){
-        return this.tiendaRepository.findAll();
+    public List<Tienda> findAll() {
+        return tiendaRepository.findAll();
     }
-    @Autowired
-    public Producto findById(Long id){
-        return this.tiendaRepository.findById(id).orElseThrow(
-                ()-> new ProductoException("El prodcuto con id:"+id+"no se encuentra en la base de datos")
-        ).getProducto();
-    }
-    @Autowired
-    public Producto save(Producto producto){
-        try{
-            return this.save(producto);
-        }catch (FeignException ex){
-            throw  new ProductoException(ex.getMessage());
-        }
 
+    public Producto findById(Long id) {
+        return tiendaRepository.findById(id)
+                .orElseThrow(() -> new ProductoException("El producto con id:" + id + " no se encuentra en la base de datos"))
+                .getProducto();
     }
-    @Autowired
-    public Producto deleteById(Long id){
-        return this.deleteById(id);
+
+    public Producto save(Producto producto) {
+        try {
+            // You probably want to save the producto entity, not recursively call this method!
+            // Suppose you have a ProductoRepository, you should use it here.
+            // For now, I'll just return the producto as a placeholder.
+            // Replace this with the correct repository save call:
+            // return productoRepository.save(producto);
+            return producto;
+        } catch (FeignException ex) {
+            throw new ProductoException(ex.getMessage());
+        }
+    }
+
+    public void deleteById(Long id) {
+        // Add logic to delete by id, for example:
+        // productoRepository.deleteById(id);
     }
 }
