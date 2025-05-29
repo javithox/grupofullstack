@@ -1,15 +1,31 @@
-package com.fullStack.msvc.gestionUsuario.msvc.Services;
+package com.proyecto.grupofullstack.services;
 
-import com.fullStack.msvc.gestionUsuario.msvc.Repository.gestionUsuarioRepository;
-import com.fullStack.msvc.gestionUsuario.msvc.models.GestionUsuario;
+import com.proyecto.grupofullstack.Exceptions.UsuarioException;
+import com.proyecto.grupofullstack.models.Usuario;
+import com.proyecto.grupofullstack.repository.usuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
-public class GestionUsuarioImpl {
+public class UsuarioServicesImpl implements usuarioServices {
     @Autowired
-    private gestionUsuarioRepository gestionUsuarioRepository;
+    private usuarioRepository usuarioRepository;
 
-    @Autowired
+    @Override
+    public List<Usuario> findAll() {
+        return this.usuarioRepository.findAll();
+    }
 
+    @Override
+    public Usuario findById(Long id) {
+        return this.usuarioRepository.findById(id)
+                .orElseThrow(() -> new UsuarioException("Usuario con id:" + id + " no se encuentra en la base de datos"));
+    }
+
+    @Override
+    public Usuario Save(Usuario usuario) {
+        return this.usuarioRepository.save(usuario);
+    }
 }
