@@ -1,7 +1,7 @@
 package com.grupoFullStack.msvc.gestionTienda.controller;
 
-import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
-import com.grupoFullStack.msvc.gestionTienda.repository.TiendaRepository;
+import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
+import com.grupoFullStack.msvc.gestionTienda.repository.tiendaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +18,7 @@ import java.util.Optional;
 @Validated
 public class GestionTienda {
     @Autowired
-    private TiendaRepository tiendaRepository;
+    private tiendaRepository tiendaRepository;
 
     @GetMapping("{producto/id}")
     public ResponseEntity<Optional<Tienda>> findById(@PathVariable Long id){

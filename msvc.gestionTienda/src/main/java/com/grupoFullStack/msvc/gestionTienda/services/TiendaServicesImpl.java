@@ -2,8 +2,8 @@ package com.grupoFullStack.msvc.gestionTienda.services;
 
 import com.grupoFullStack.msvc.gestionTienda.Exceptions.ProductoException;
 import com.grupoFullStack.msvc.gestionTienda.models.Producto;
-import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
-import com.grupoFullStack.msvc.gestionTienda.repository.TiendaRepository;
+import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
+import com.grupoFullStack.msvc.gestionTienda.repository.tiendaRepository;
 import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ import java.util.List;
 public class TiendaServicesImpl {
 
     @Autowired
-    private TiendaRepository tiendaRepository;
+    private tiendaRepository tiendaRepository;
 
     public List<Tienda> findAll() {
         return tiendaRepository.findAll();

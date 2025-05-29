@@ -11,11 +11,11 @@
 		<version>3.4.5</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.grupofullstack.msvc_empleados</groupId>
-	<artifactId>msvc_empleados</artifactId>
+	<groupId>com.proyecto</groupId>
+	<artifactId>grupofullstack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>msvc_empleados</name>
 	<packaging>pom</packaging>
+	<name>grupofullstack</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -29,7 +29,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>${spring.boot.version}</version>
-				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 		</dependencies>

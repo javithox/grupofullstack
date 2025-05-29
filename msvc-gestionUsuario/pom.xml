@@ -8,10 +8,11 @@
 		<version>3.4.5</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.fullStack.msvc.gestionUsuario</groupId>
-	<artifactId>msvc-gestionUsuario</artifactId>
+	<groupId>com.proyecto</groupId>
+	<artifactId>grupofullstack</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>msvc-gestionUsuario</name>
+	<packaging>pom</packaging>
+	<name>grupofullstack</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
