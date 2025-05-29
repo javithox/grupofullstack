@@ -1,6 +1,6 @@
 package com.fullStack.msvc.gestionUsuario.msvc.DTO;
 
-import com.fullStack.msvc.gestionUsuario.msvc.models.GestionUsuario;
+import com.fullStack.msvc.gestionUsuario.msvc.models.entities.GestionUsuario;
 import lombok.*;
 
 import java.time.LocalDateTime;

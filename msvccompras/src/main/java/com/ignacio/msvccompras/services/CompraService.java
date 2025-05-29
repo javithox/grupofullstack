@@ -1,6 +1,6 @@
 package com.ignacio.msvccompras.services;
 
-import com.ignacio.msvccompras.models.Compra;
+import com.ignacio.msvccompras.models.entities.Compra;
 
 import java.util.List;
 import java.util.Optional;

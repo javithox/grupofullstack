@@ -1,6 +1,6 @@
 package com.ignacio.msvccompras.services;
 
-import com.ignacio.msvccompras.models.Compra;
+import com.ignacio.msvccompras.models.entities.Compra;
 import com.ignacio.msvccompras.repositories.CompraRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.grupofullstack.msvc.gestionEnvios.msvc.Controller;
 
 
-import com.grupofullstack.msvc.gestionEnvios.msvc.Models.Envios;
+import com.grupofullstack.msvc.gestionEnvios.msvc.Models.entities.Envios;
 import com.grupofullstack.msvc.gestionEnvios.msvc.Services.gestionEnviosServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

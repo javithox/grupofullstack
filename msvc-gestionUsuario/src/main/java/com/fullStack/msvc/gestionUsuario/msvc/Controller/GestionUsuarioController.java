@@ -1,7 +1,7 @@
 package com.fullStack.msvc.gestionUsuario.msvc.Controller;
 
 import com.fullStack.msvc.gestionUsuario.msvc.Repository.gestionUsuarioRepository;
-import com.fullStack.msvc.gestionUsuario.msvc.models.GestionUsuario;
+import com.fullStack.msvc.gestionUsuario.msvc.models.entities.GestionUsuario;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

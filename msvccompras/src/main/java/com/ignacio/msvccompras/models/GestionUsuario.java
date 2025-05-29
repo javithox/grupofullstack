@@ -1,7 +1,4 @@
-package com.fullStack.msvc.gestionUsuario.msvc.models;
-
-import jakarta.persistence.*;
-import lombok.*;
+package com.ignacio.msvccompras.models;
 
 @Table(name = "gestion usuario")
 @Entity

@@ -1,5 +1,5 @@
 
-package com.ignacio.msvc_empleados.models;
+package com.grupoFullStack.msvc.gestionTienda.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

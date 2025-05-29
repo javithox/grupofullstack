@@ -1,6 +1,6 @@
 package com.grupofullstack.msvc.gestionEnvios.msvc.Services;
 
-import com.grupofullstack.msvc.gestionEnvios.msvc.Models.Envios;
+import com.grupofullstack.msvc.gestionEnvios.msvc.Models.entities.Envios;
 
 
 import com.grupofullstack.msvc.gestionEnvios.msvc.Repository.gestionEnviosRepository;

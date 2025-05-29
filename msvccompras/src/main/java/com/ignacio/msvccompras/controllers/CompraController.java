@@ -1,6 +1,6 @@
 package com.ignacio.msvccompras.controllers;
 
-import com.ignacio.msvccompras.models.Compra;
+import com.ignacio.msvccompras.models.entities.Compra;
 import com.ignacio.msvccompras.services.CompraService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

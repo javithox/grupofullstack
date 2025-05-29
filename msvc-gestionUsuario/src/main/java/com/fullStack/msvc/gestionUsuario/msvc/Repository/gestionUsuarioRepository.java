@@ -1,6 +1,6 @@
 package com.fullStack.msvc.gestionUsuario.msvc.Repository;
 
-import com.fullStack.msvc.gestionUsuario.msvc.models.GestionUsuario;
+import com.fullStack.msvc.gestionUsuario.msvc.models.entities.GestionUsuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.fullStack.msvc.gestionUsuario.msvc.Services;
 
-import com.fullStack.msvc.gestionUsuario.msvc.models.GestionUsuario;
+import com.fullStack.msvc.gestionUsuario.msvc.models.entities.GestionUsuario;
 
 
 
