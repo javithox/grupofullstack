@@ -16,23 +16,23 @@ import java.util.List;
 public class UsuarioController {
     @Autowired
     private usuarioServices usuarioServices;
+
     @GetMapping
-    public ResponseEntity<List<Usuario>> findAll(){
+    public ResponseEntity<List<Usuario>> findAll() {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(this.usuarioServices.findAll());
     }
     @GetMapping("/{id}")
-    public ResponseEntity<Usuario> findById(@PathVariable Long id){
+    public ResponseEntity<Usuario> findById(@PathVariable Long id) {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(this.usuarioServices.findById(id));
     }
-    @GetMapping
-    public ResponseEntity<Usuario> save(@RequestBody Usuario usuario){
+    @PostMapping
+    public ResponseEntity<Usuario> save(@RequestBody Usuario usuario) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(this.usuarioServices.Save(usuario));
     }
-
 }
