@@ -17,7 +17,8 @@
 	<url/>
 
     <modules>
-        <module>msvc-gestionUsuario</module>
+		<module>msvc-gestionUsuario</module>
+		<module>msvcpagos</module>
 		<module>msvc.gestionEnvios</module>
 		<module>msvc.gestionTienda</module>
 		<module>msvc.gestorDatos</module>

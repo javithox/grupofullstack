@@ -1,29 +1,31 @@
 package com.grupoFullStack.msvc.gestionTienda.controller;
 
+
 import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
-import com.grupoFullStack.msvc.gestionTienda.repository.tiendaRepository;
+import com.grupoFullStack.msvc.gestionTienda.services.TiendaServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
+import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/gestiontienda")
+@RequestMapping("/api/v1/tiendas")
 @Validated
 public class GestionTienda {
     @Autowired
-    private tiendaRepository tiendaRepository;
+    private TiendaServices tiendaServices;
 
-    @GetMapping("{producto/id}")
-    public ResponseEntity<Optional<Tienda>> findById(@PathVariable Long id){
-        return ResponseEntity.status(HttpStatus.OK).body(this.tiendaRepository.findById(id));
+    @GetMapping
+    public ResponseEntity<List<Tienda>>findAll(){
+        return ResponseEntity .status(HttpStatus.OK).body(this.tiendaServices.findAll());
+    }
+    @GetMapping("/usuario")
+    public ResponseEntity<Tienda> findByNombre(String nombre){
+        return ResponseEntity .status(HttpStatus.OK).body(this.tiendaServices.findBynombre(nombre));
     }
 
-
 }
+

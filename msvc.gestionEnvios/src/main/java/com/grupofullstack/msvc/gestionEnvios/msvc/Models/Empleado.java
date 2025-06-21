@@ -1,7 +1,6 @@
 
 package com.grupofullstack.msvc.gestionEnvios.msvc.Models;
 
-import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

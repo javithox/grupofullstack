@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface tiendaRepository extends JpaRepository<Tienda , Long> {
 
+    Tienda findByNombre(String nombre);
 }

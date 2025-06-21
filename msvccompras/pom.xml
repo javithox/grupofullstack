@@ -14,9 +14,6 @@
 <name>msvc.gestorDatos</name>
 <description>Demo project for Spring Boot</description>
 	<url/>
-	<modules>
-		<module>msvcpagos</module>
-	</modules>
 	<licenses>
 		<license/>
 	</licenses>

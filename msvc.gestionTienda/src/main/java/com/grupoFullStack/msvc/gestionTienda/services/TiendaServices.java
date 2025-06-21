@@ -1,13 +1,20 @@
 package com.grupoFullStack.msvc.gestionTienda.services;
 
-import com.grupoFullStack.msvc.gestionTienda.models.Producto;
+
+import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
 
 import java.util.List;
 
 public interface TiendaServices {
 
-    List<Producto> findAll();
-    Producto findById(Long id);
-    Producto save(Producto producto);
-    Producto deleteById(Long id);
+    List<Tienda> findAll();
+
+
+    Tienda findBynombre(String nombre);
+
+
+
+
+    Tienda save(Tienda tienda);
+
 }

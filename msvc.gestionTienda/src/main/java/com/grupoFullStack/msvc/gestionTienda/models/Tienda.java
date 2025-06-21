@@ -1,5 +1,4 @@
 package com.grupoFullStack.msvc.gestionTienda.models;
-
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -7,10 +6,10 @@ import java.time.LocalDateTime;
 public class Tienda {
 
     private String nombre;
-    private Producto producto;
     private String direccion;
     private String numeroTienda;
     private LocalDateTime horaApertura;
     private String descripcion;
 
 }
+
