@@ -1,6 +1,6 @@
 package com.grupoFullStack.msvc.gestionTienda.services;
 
-import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
+import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
 import com.grupoFullStack.msvc.gestionTienda.repository.tiendaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.grupoFullStack.msvc.gestionTienda.services;
 
 
-import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
+import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
 
 import java.util.List;
 

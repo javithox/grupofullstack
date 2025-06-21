@@ -1,7 +1,7 @@
 package com.grupoFullStack.msvc.gestionTienda.controller;
 
 
-import com.grupoFullStack.msvc.gestionTienda.models.Tienda;
+import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
 import com.grupoFullStack.msvc.gestionTienda.services.TiendaServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

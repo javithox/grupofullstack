@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class globalErrorProducto {
+public class globalErrorTienda {
 
         private ErrorDTO createErrorDTO(int status, Date date, Map<String , String> errorMap){
             ErrorDTO errorDTO= new ErrorDTO();
@@ -34,7 +34,7 @@ public class globalErrorProducto {
         }
 
         @ExceptionHandler()
-        public ResponseEntity<ErrorDTO>handleUsuarioException(ProductoException exception){
+        public ResponseEntity<ErrorDTO>handleUsuarioException(TiendaException exception){
             Map<String, String> errorMap= Collections.singletonMap("Producto error", exception.getMessage());
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(this.createErrorDTO(HttpStatus.NOT_FOUND.value(), new Date(),errorMap));
         }

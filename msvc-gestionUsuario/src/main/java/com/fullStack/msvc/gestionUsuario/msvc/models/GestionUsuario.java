@@ -1,4 +1,4 @@
-package com.fullStack.msvc.gestionUsuario.msvc.models.entities;
+package com.fullStack.msvc.gestionUsuario.msvc.models;
 
 import jakarta.persistence.*;
 import lombok.*;
