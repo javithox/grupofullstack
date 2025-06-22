@@ -1,7 +1,8 @@
 package com.proyecto.controller;
 
-import com.perfulandia.msvc.producto.models.Producto;
-import com.perfulandia.msvc.producto.services.productoServices;
+
+import com.proyecto.models.Producto;
+import com.proyecto.services.productoServices;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

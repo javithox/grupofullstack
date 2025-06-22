@@ -1,8 +1,9 @@
 package com.proyecto.services;
 
-import com.perfulandia.msvc.producto.exception.productoException;
-import com.perfulandia.msvc.producto.models.Producto;
-import com.perfulandia.msvc.producto.repositories.productoRepository;
+
+import com.proyecto.exception.productoException;
+import com.proyecto.models.Producto;
+import com.proyecto.repositories.productoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

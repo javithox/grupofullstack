@@ -1,6 +1,7 @@
 package com.proyecto.services;
 
-import com.perfulandia.msvc.producto.models.Producto;
+
+import com.proyecto.models.Producto;
 
 import java.util.List;
 
