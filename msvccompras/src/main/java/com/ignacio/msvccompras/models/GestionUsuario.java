@@ -1,8 +1,14 @@
 package com.ignacio.msvccompras.models;
 
+import jakarta.persistence.*;
+import lombok.*;
+
 @Table(name = "gestion usuario")
 @Entity
-@Getter @Setter  @AllArgsConstructor @NoArgsConstructor
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
 public class GestionUsuario {
 

@@ -1,6 +1,7 @@
 package com.ignacio.msvcpagos.repositories;
 
-import com.ignacio.msvcpagos.models.Pago;
+
+import com.grupoFullStack.msvc.gestionTienda.models.Pago;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

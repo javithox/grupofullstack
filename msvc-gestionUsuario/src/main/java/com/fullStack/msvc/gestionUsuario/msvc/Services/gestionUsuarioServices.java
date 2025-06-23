@@ -2,9 +2,10 @@ package com.fullStack.msvc.gestionUsuario.msvc.Services;
 
 import com.fullStack.msvc.gestionUsuario.msvc.models.GestionUsuario;
 
+import java.util.List;
 
 
 public interface gestionUsuarioServices {
     GestionUsuario FindById(Long id);
-    GestionUsuario FindByName(String name);
+    List<GestionUsuario> FindByName(String name);
 }

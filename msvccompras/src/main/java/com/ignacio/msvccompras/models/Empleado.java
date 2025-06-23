@@ -1,7 +1,8 @@
 
 package com.ignacio.msvccompras.models;
 
-import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
+
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,5 +1,5 @@
 
-package com.ignacio.msvc_empleados;
+package com.fullStack.msvc.msvc_empleados;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

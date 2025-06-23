@@ -1,8 +1,9 @@
 
-package com.ignacio.msvc_empleados.services;
+package com.fullStack.msvc.msvc_empleados.services;
 
-import com.ignacio.msvc_empleados.models.Empleado;
-import com.ignacio.msvc_empleados.models.Sucursal;
+
+import com.grupoFullStack.msvc.gestionTienda.models.Empleado;
+import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
 
 import java.util.List;
 import java.util.Optional;

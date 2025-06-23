@@ -1,8 +1,10 @@
-package com.ignacio.msvc_empleados.services;
+package com.fullStack.msvc.msvc_empleados.services.impl;
 
-import com.ignacio.msvc_empleados.models.Empleado;
-import com.ignacio.msvc_empleados.models.Sucursal;
-import com.ignacio.msvc_empleados.repositories.EmpleadoRepository;
+
+import com.fullStack.msvc.msvc_empleados.repositories.EmpleadoRepository;
+import com.fullStack.msvc.msvc_empleados.services.EmpleadoService;
+import com.grupoFullStack.msvc.gestionTienda.models.Empleado;
+import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +18,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
     private EmpleadoRepository repository;
 
     @Autowired
-    private PermisoClientService permisoClient;
+    private com.ignacio.msvc_empleados.services.PermisoClientService permisoClient;
 
     @Override
     public List<Empleado> findAll() {

@@ -1,7 +1,8 @@
 package com.ignacio.msvcpagos.services.impl;
 
+import com.grupoFullStack.msvc.gestionTienda.models.Pago;
 import com.ignacio.msvcpagos.clients.CompraClient;
-import com.ignacio.msvcpagos.models.Pago;
+
 import com.ignacio.msvcpagos.repositories.PagoRepository;
 import com.ignacio.msvcpagos.services.PagoService;
 import org.springframework.beans.factory.annotation.Autowired;

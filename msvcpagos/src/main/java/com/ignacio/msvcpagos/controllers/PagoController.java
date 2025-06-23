@@ -1,6 +1,7 @@
 package com.ignacio.msvcpagos.controllers;
 
-import com.ignacio.msvcpagos.models.Pago;
+
+import com.grupoFullStack.msvc.gestionTienda.models.Pago;
 import com.ignacio.msvcpagos.services.PagoService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

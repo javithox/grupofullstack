@@ -1,6 +1,7 @@
 package com.ignacio.msvcpagos.services;
 
-import com.ignacio.msvcpagos.models.Pago;
+import com.grupoFullStack.msvc.gestionTienda.models.Pago;
+
 
 import java.util.List;
 import java.util.Optional;

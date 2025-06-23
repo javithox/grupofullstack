@@ -1,8 +1,9 @@
 
-package com.ignacio.msvc_empleados.repositories;
+package com.fullStack.msvc.msvc_empleados.repositories;
 
-import com.ignacio.msvc_empleados.models.Empleado;
-import com.ignacio.msvc_empleados.models.Sucursal;
+
+import com.grupoFullStack.msvc.gestionTienda.models.Empleado;
+import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 

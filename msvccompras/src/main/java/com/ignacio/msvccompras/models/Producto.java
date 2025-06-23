@@ -1,6 +1,12 @@
 package com.ignacio.msvccompras.models;
 
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor @ToString
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class Producto {
 
     private Long id_producto;

@@ -1,9 +1,9 @@
 
-package com.ignacio.msvc_empleados.controllers;
+package com.fullStack.msvc.msvc_empleados.controllers;
 
-import com.ignacio.msvc_empleados.models.Empleado;
-import com.ignacio.msvc_empleados.models.Sucursal;
-import com.ignacio.msvc_empleados.services.EmpleadoService;
+import com.fullStack.msvc.msvc_empleados.services.EmpleadoService;
+import com.grupoFullStack.msvc.gestionTienda.models.Empleado;
+import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
