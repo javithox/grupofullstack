@@ -11,4 +11,5 @@ public interface productoServices {
     Producto findByNombre(String nombre);
     Producto save(Producto producto);
 
+    Producto deleteById(Long id);
 }
