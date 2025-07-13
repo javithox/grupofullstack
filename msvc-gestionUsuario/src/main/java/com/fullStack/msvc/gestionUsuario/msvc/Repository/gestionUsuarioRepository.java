@@ -8,7 +8,8 @@ import java.util.List;
 
 @Repository
 public interface gestionUsuarioRepository extends JpaRepository<GestionUsuario , Long> {
-    Long FindById(Long id);
+    GestionUsuario FindById(Long id);
 
     List<GestionUsuario> FindByname(String name);
+
 }

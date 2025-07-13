@@ -7,7 +7,9 @@ import java.util.Optional;
 
 public interface CompraService {
     List<Compra> findAll();
-    Optional<Compra> findById(Long id);
+    List<Compra> findById(Long id);
     Compra save(Compra compra);
     void deleteById(Long id);
+
+    Object deletedById(Long id);
 }

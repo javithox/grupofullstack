@@ -1,10 +1,10 @@
-package com.grupofullstack.msvc.gestorDatos;
+package com.msvc.producto;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class ProductoApplicationTests {
 
 	@Test
 	void contextLoads() {

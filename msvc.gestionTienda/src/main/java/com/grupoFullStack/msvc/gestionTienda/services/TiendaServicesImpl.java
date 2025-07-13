@@ -27,6 +27,10 @@ public class TiendaServicesImpl implements TiendaServices{
         return this.tiendaRepository.save(tienda);
     }
 
+    @Override
+    public Tienda deleteById(Long id) {
+        return this.tiendaRepository.deletedById(id);
+    }
 
 
 }

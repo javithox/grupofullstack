@@ -4,7 +4,6 @@ package com.proyecto.controller;
 import com.proyecto.models.Producto;
 import com.proyecto.services.productoServices;
 import jakarta.validation.Valid;
-import org.hibernate.annotations.SelectBeforeUpdate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +16,7 @@ import java.util.List;
 @RequestMapping("/api/v1/productos")
 @Validated
 public class productoController {
+
     @Autowired
     private productoServices productoServices;
 
@@ -38,7 +38,7 @@ public class productoController {
         return ResponseEntity .status(HttpStatus.OK).body(this.productoServices.findByNombre(nombre));
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<Producto>deleteById(@PathVariable Long id){
+    public ResponseEntity<Producto> deleteById(@PathVariable Long id){
         return ResponseEntity .status(HttpStatus.NO_CONTENT).body(this.productoServices.deleteById(id));
     }
 }

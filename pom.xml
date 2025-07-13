@@ -18,10 +18,8 @@
 
     <modules>
 		<module>msvc-gestionUsuario</module>
-		<module>msvcpagos</module>
 		<module>msvc.gestionEnvios</module>
 		<module>msvc.gestionTienda</module>
-		<module>msvc.gestorDatos</module>
 		<module>msvc_empleados</module>
 		<module>msvccompras</module>
 		<module>msvc-producto</module>

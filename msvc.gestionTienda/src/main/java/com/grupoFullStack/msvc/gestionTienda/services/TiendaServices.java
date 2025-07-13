@@ -12,9 +12,7 @@ public interface TiendaServices {
 
     Tienda findBynombre(String nombre);
 
-
-
-
     Tienda save(Tienda tienda);
+    Tienda deleteById(Long id);
 
 }
