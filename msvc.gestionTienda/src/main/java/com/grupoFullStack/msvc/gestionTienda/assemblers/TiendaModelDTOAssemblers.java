@@ -1,21 +1,23 @@
 package com.grupoFullStack.msvc.gestionTienda.assemblers;
 
+
+import com.grupoFullStack.msvc.gestionTienda.DTO.TiendaDTO;
 import com.grupoFullStack.msvc.gestionTienda.controller.GestionTienda;
-import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @Component
-public class TiendaModelDTOAssemblers implements RepresentationModelAssembler<Tienda, EntityModel<Tienda>> {
+public class TiendaModelDTOAssemblers implements RepresentationModelAssembler<TiendaDTO, EntityModel<TiendaDTO>> {
 
     @Override
-    public EntityModel<Tienda> toModel(Tienda entity) {
+    public EntityModel<TiendaDTO> toModel(TiendaDTO entity) {
         return EntityModel.of(
                 entity,
-                linkTo(methodOn(GestionTienda.class).findAll(entity.getIdTienda())).withRel("Tienda")
+                linkTo(methodOn(GestionTienda.class).findAll()).withRel("Tienda")
         );
     }
 }

@@ -2,7 +2,7 @@ package com.grupoFullStack.msvc.gestionTienda.DTO;
 
 import java.time.LocalDateTime;
 
-public class GestionTiendaDTO {
+public class TiendaDTO {
 
     private LocalDateTime horaCompra;
 
@@ -12,7 +12,7 @@ public class GestionTiendaDTO {
 
     private String rutUsuario;
 
-    public GestionTiendaDTO(
+    public TiendaDTO(
             LocalDateTime horaCompra,
             Integer costo,
             String nombreCliente,
