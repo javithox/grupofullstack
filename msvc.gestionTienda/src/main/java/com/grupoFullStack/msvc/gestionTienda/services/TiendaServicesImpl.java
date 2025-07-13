@@ -15,12 +15,10 @@ public class TiendaServicesImpl implements TiendaServices{
 
     public List<Tienda> findAll(){return this.tiendaRepository.findAll();}
 
-
     @Override
     public Tienda findBynombre(String nombre) {
-        return this.tiendaRepository.findByNombre(nombre);
+        return this.tiendaRepository.findBynombre(nombre);
     }
-
 
     @Override
     public Tienda save(Tienda tienda) {
@@ -28,8 +26,8 @@ public class TiendaServicesImpl implements TiendaServices{
     }
 
     @Override
-    public Tienda deleteById(Long id) {
-        return this.tiendaRepository.deletedById(id);
+    public void deleteById(Long id) {
+        this.tiendaRepository.deleteById(id);
     }
 
 

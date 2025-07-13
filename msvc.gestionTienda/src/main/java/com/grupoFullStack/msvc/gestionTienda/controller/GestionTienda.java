@@ -19,7 +19,7 @@ public class GestionTienda {
     private TiendaServices tiendaServices;
 
     @GetMapping
-    public ResponseEntity<List<Tienda>>findAll(){
+    public ResponseEntity<List<Tienda>>findAll(Long idTienda){
         return ResponseEntity .status(HttpStatus.OK).body(this.tiendaServices.findAll());
     }
     @GetMapping("/usuario")

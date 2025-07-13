@@ -8,8 +8,5 @@ import org.springframework.stereotype.Repository;
 @EnableJpaRepositories
 @Repository
 public interface tiendaRepository extends JpaRepository<Tienda , Long> {
-
-    Tienda findByNombre(String nombre);
-
-    Tienda deletedById(Long id);
+    Tienda findBynombre(String nombre);
 }
