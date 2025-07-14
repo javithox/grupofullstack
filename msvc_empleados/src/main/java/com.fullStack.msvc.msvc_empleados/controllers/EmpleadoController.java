@@ -1,11 +1,10 @@
 
 package com.fullStack.msvc.msvc_empleados.controllers;
 
+import com.fullStack.msvc.msvc_empleados.models.Empleado;
 import com.fullStack.msvc.msvc_empleados.services.EmpleadoService;
-import com.grupoFullStack.msvc.gestionTienda.models.Empleado;
-import com.grupoFullStack.msvc.gestionTienda.models.Sucursal;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,14 +29,10 @@ public class EmpleadoController {
         return empleado.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/sucursal/{nombre}")
-    public List<Empleado> listarPorSucursal(@PathVariable String nombre) {
-        return service.findBySucursal(Sucursal.valueOf(nombre.toUpperCase()));
-    }
 
     @PostMapping
-    public ResponseEntity<Empleado> crear(@Valid @RequestBody Empleado empleado) {
-        return ResponseEntity.ok(service.save(empleado));
+    public ResponseEntity<Empleado> crear(@RequestBody Empleado empleado) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(this.service.save(empleado));
     }
 
     @PutMapping("/{id}/permisos")

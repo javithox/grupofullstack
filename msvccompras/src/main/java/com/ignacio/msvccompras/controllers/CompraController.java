@@ -4,10 +4,12 @@ import com.ignacio.msvccompras.models.Compra;
 import com.ignacio.msvccompras.services.CompraService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/compras")
@@ -23,7 +25,7 @@ public class CompraController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<List<Compra>> detalle(@PathVariable Long id) {
+    public ResponseEntity<Optional<Compra>> detalle(@PathVariable Long id) {
         return ResponseEntity .status(HttpStatus.OK).body(this.service.findById(id));
     }
 
@@ -32,9 +34,5 @@ public class CompraController {
         return ResponseEntity.status(HttpStatus.CREATED).body(this.service.save(compra));
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Compra> eliminar(@PathVariable Long id) {
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(this.service.deletedById(id));
-    }
 }
 

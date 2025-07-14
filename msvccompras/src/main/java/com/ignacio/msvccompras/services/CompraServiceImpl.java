@@ -29,8 +29,5 @@ public class CompraServiceImpl implements CompraService {
         return repository.save(compra);
     }
 
-    @Override
-    public void deleteById(Long id) {
-        repository.deleteById(id);
-    }
 }
+
