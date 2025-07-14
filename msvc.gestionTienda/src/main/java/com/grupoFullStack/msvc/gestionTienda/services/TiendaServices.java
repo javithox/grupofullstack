@@ -4,6 +4,7 @@ package com.grupoFullStack.msvc.gestionTienda.services;
 import com.grupoFullStack.msvc.gestionTienda.models.entities.Tienda;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface TiendaServices {
 
@@ -13,6 +14,7 @@ public interface TiendaServices {
     Tienda findBynombre(String nombre);
 
     Tienda save(Tienda tienda);
-    void deleteById(Long id);
+    Tienda deleteById(Long id);
 
+    Optional<Tienda> findByIdTienda(Long id);
 }

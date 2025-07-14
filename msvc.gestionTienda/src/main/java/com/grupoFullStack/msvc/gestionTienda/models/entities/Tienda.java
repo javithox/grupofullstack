@@ -4,6 +4,7 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
+import java.nio.channels.FileChannel;
 import java.time.LocalDateTime;
 @Getter @Setter @ToString @NoArgsConstructor @AllArgsConstructor
 @Entity
@@ -17,6 +18,7 @@ public class Tienda {
     private String numeroTienda;
     private LocalDateTime horaApertura;
     private String descripcion;
+
 
 }
 
