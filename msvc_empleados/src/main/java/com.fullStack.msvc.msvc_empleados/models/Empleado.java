@@ -1,16 +1,12 @@
+package com.fullStack.msvc.msvc_empleados.models;
 
-package com.grupoFullStack.msvc.gestionTienda.models;
-
-import jakarta.persistence.*;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
 public class Empleado {
 
     @Id
@@ -22,11 +18,8 @@ public class Empleado {
 
     @NotBlank
     private String apellido;
-
-    @Enumerated(EnumType.STRING)
-    private Sucursal sucursal;
-
+    @NotBlank
     private String cargo;
-
+    @NotBlank
     private String permiso;
 }

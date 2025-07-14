@@ -35,7 +35,7 @@ public class globalErrorTienda {
 
         @ExceptionHandler()
         public ResponseEntity<ErrorDTO>handleUsuarioException(TiendaException exception){
-            Map<String, String> errorMap= Collections.singletonMap("Producto error", exception.getMessage());
+            Map<String, String> errorMap= Collections.singletonMap("Tienda error", exception.getMessage());
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(this.createErrorDTO(HttpStatus.NOT_FOUND.value(), new Date(),errorMap));
         }
 

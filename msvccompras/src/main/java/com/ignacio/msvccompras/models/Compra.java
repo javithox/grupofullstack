@@ -4,8 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,25 +16,26 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Pago {
+public class Compra {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
-    private Long compraId;  // Referencia a la compra que se paga
+    @NotBlank
+    private String producto;
 
     @NotNull
-    @Positive
-    private Double monto;
+    private Integer cantidad;
 
     @NotNull
-    private LocalDateTime fechaPago;
+    private Double precioTotal;
 
     @NotNull
-    private String metodoPago; // ej: "tarjeta", "transferencia"
+    private LocalDateTime fechaCompra;
 
     @NotNull
-    private Boolean valido;  // true si el pago fue validado correctamente
+    private Long idCliente;
+
+    private String estado;
 }

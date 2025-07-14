@@ -1,9 +1,8 @@
 package com.ignacio.msvccompras.services;
 
-import com.ignacio.msvccompras.models.entities.Compra;
+import com.ignacio.msvccompras.models.Compra;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface CompraService {
     List<Compra> findAll();
